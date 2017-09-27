@@ -16,3 +16,7 @@ function git-branch-diff() {
     echo "additions: $(git diff "$1..$2" | grep "^+[^+]" | wc -l)"
     echo "deletions: $(git diff "$1..$2" | grep "^-[^-]" | wc -l)"
 }
+
+cdf() {
+    cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
