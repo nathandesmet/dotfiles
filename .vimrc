@@ -36,12 +36,27 @@ nnoremap <leader><leader> :set hlsearch!<CR>
 " Go Back, for example after 'Goto Definition = gd' (sometimes ctrl-o is mapped to something else)
 nnoremap gb <c-o>
 
-
 noremap q: <nop>
-
 
 " remap go to topic
 noremap <c-l> <c-]> 
+
+
+" inoremap jj <esc>
+" inoremap <esc> <nop>
+
+
+" increase / decrease size of split pane
+nnoremap <left> <c-w><
+nnoremap <right> <c-w>>
+nnoremap <up> <c-w>-
+nnoremap <down> <c-w>+
+
+" navigate between multiple splits
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
 
 
 
@@ -76,7 +91,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-
 
 
 
