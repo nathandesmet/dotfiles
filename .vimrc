@@ -18,6 +18,9 @@ set showcmd
 "set autowrite 
 
 
+" hi CursorLine ctermfg=None ctermbg=None cterm=underline guifg=white guibg=yellow gui=none
+" hi CursorLine ctermfg=None ctermbg=Lightgrey cterm=none guifg=white guibg=yellow gui=none
+
 
 set incsearch
 "set hlsearch     " can be turned on using <leader><leader>
@@ -59,6 +62,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
 
+nnoremap <enter> r<enter>
 
 autocmd BufNewFile,BufRead *.ejs set syntax=html
 
