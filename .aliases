@@ -6,9 +6,11 @@ alias cd..="cd .."
 alias clipboard="pbcopy"
 alias subs="subliminal download -l nl"
 alias ll="ls -lG"
+alias lld2="ls -ld */*"
 alias c="clear"
 
 alias git-log="git log --graph --all --decorate"
 alias git-changed="git diff-tree --no-commit-id --name-only -r"
 alias git-conflicts="git diff --name-only --diff-filter=U"
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
